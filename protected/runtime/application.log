@@ -1,0 +1,447 @@
+2017/06/20 10:43:24 [error] [php] include(Product.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php(10): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ExportController->actionIndex()
+#2 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ExportController->runAction()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ExportController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ExportController->run()
+#6 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=export
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php (10)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 10:44:31 [error] [php] include(XlsExporter.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php(11): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ExportController->actionIndex()
+#2 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ExportController->runAction()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ExportController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ExportController->run()
+#6 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=export
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php (11)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 10:44:41 [error] [php] include(XlsExporter.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php(11): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ExportController->actionIndex()
+#2 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ExportController->runAction()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ExportController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ExportController->run()
+#6 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=export
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php (11)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 10:45:59 [error] [php] include(XlsExporter.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php(11): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ExportController->actionIndex()
+#2 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ExportController->runAction()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ExportController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ExportController->run()
+#6 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=export
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php (11)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 10:57:12 [error] [php] Undefined variable: fields (C:\xampp\htdocs\notsboltsscrews\protected\views\export\index.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): ExportController->renderFile()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): ExportController->renderPartial()
+#2 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php(12): ExportController->render()
+#3 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ExportController->actionIndex()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ExportController->runAction()
+#6 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ExportController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ExportController->run()
+#8 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=export
+in C:\xampp\htdocs\notsboltsscrews\protected\views\export\index.php (11)
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php (12)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 10:58:57 [error] [php] Undefined variable: fields (C:\xampp\htdocs\notsboltsscrews\protected\views\export\index.php:11)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): ExportController->renderFile()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): ExportController->renderPartial()
+#2 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php(12): ExportController->render()
+#3 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ExportController->actionIndex()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ExportController->runAction()
+#6 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ExportController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ExportController->run()
+#8 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=export
+in C:\xampp\htdocs\notsboltsscrews\protected\views\export\index.php (11)
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ExportController.php (12)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 11:12:32 [error] [php] Undefined variable: model (C:\xampp\htdocs\notsboltsscrews\protected\views\import\index.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): ImportController->renderFile()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): ImportController->renderPartial()
+#2 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(7): ImportController->render()
+#3 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionIndex()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#6 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#8 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+in C:\xampp\htdocs\notsboltsscrews\protected\views\import\index.php (10)
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (7)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 11:29:45 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 11:32:55 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 11:33:29 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 11:39:20 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 11:40:26 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 11:40:55 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 11:47:46 [error] [exception.CException] exception 'CException' with message 'Alias "ext.import.ImportModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\YiiBase.php(197): YiiBase::import('ext.import.Impo...', true)
+#1 C:\xampp\htdocs\yii-1\framework\base\CModule.php(282): YiiBase::createComponent('ext.import.Impo...', 'import', NULL, Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(337): CModule->getModule('import')
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(276): CWebApplication->createController('import')
+#4 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import')
+#5 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import
+---
+2017/06/20 13:55:02 [error] [php] Undefined variable: _FILE (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:39)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (39)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 14:00:02 [error] [php] Undefined index: fileToUpload (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (40)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 14:01:17 [error] [php] Undefined index: fileToUpload (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (41)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 14:27:11 [error] [php] Undefined index: csv (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (57)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 14:27:48 [error] [php] Undefined index: csv (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (57)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 14:27:54 [error] [php] Undefined index: csv (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (57)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/20 14:28:04 [error] [php] Undefined index: csvfile (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:41)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (41)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/21 07:50:07 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:74)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (74)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/21 07:53:13 [error] [php] Undefined offset: 4 (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (76)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/21 08:04:25 [error] [php] Undefined offset: 4 (C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php:75)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/upload
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (75)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/21 08:27:35 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootActiveForm" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii-1\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ImportController), 'bootstrap.widge...', Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(198): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(12): CBaseController->beginWidget('bootstrap.widge...', Array)
+#4 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): CController->renderPartial('importcsv', Array, true)
+#8 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(200): CController->render('importcsv', Array)
+#9 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImportCSV()
+#10 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#14 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import/importcs...')
+#15 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import/importcsv
+---
+2017/06/21 08:28:40 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.type" is not defined.' in C:\xampp\htdocs\yii-1\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CWidgetFactory.php(161): CComponent->__set('type', 'horizontal')
+#1 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(ImportController), 'CActiveForm', Array)
+#2 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(198): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(11): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): CController->renderPartial('importcsv', Array, true)
+#8 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(200): CController->render('importcsv', Array)
+#9 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImportCSV()
+#10 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#14 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import/importcs...')
+#15 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import/importcsv
+---
+2017/06/21 08:34:09 [error] [exception.CException] exception 'CException' with message 'Property "UserImportForm.username" is not defined.' in C:\xampp\htdocs\yii-1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(2747): CComponent->__get('username')
+#1 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(UserImportForm), 'username')
+#2 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(UserImportForm), 'username', Array)
+#3 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(8): CHtml::activeTextField(Object(UserImportForm), 'username')
+#4 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): CController->renderPartial('importcsv', Array, true)
+#8 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(200): CController->render('importcsv', Array)
+#9 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImportCSV()
+#10 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#14 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import/importcs...')
+#15 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import/importcsv
+---
+2017/06/21 08:36:16 [error] [exception.CException] exception 'CException' with message 'Property "UserImportForm.username" is not defined.' in C:\xampp\htdocs\yii-1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(2747): CComponent->__get('username')
+#1 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(UserImportForm), 'username')
+#2 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(UserImportForm), 'username', Array)
+#3 C:\xampp\htdocs\yii-1\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(UserImportForm), 'username', Array)
+#4 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(8): CActiveForm->textField(Object(UserImportForm), 'username')
+#5 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): CController->renderPartial('importcsv', Array, true)
+#9 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(200): CController->render('importcsv', Array)
+#10 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImportCSV()
+#11 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#15 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import/importcs...')
+#16 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import/importcsv
+---
+2017/06/21 08:36:20 [error] [exception.CException] exception 'CException' with message 'Property "UserImportForm.username" is not defined.' in C:\xampp\htdocs\yii-1\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(2747): CComponent->__get('username')
+#1 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(UserImportForm), 'username')
+#2 C:\xampp\htdocs\yii-1\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(UserImportForm), 'username', Array)
+#3 C:\xampp\htdocs\yii-1\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(UserImportForm), 'username', Array)
+#4 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(8): CActiveForm->textField(Object(UserImportForm), 'username')
+#5 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): CController->renderPartial('importcsv', Array, true)
+#9 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(200): CController->render('importcsv', Array)
+#10 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImportCSV()
+#11 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#15 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import/importcs...')
+#16 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import/importcsv
+---
+2017/06/21 08:39:03 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "file".' in C:\xampp\htdocs\yii-1\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(8): CComponent->__call('file', Array)
+#1 C:\xampp\htdocs\notsboltsscrews\protected\views\import\importcsv.php(8): CActiveForm->file(Object(UserImportForm), 'file')
+#2 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii-1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii-1\framework\web\CController.php(785): CController->renderPartial('importcsv', Array, true)
+#6 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(200): CController->render('importcsv', Array)
+#7 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImportCSV()
+#8 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): CController->run('importcsv')
+#12 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController('import/importcs...')
+#13 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\notsboltsscrews\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/notsboltsscrews/index.php?r=import/importcsv
+---
+2017/06/21 09:17:40 [error] [php] include(Registration.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii-1\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php(204): spl_autoload_call()
+#1 C:\xampp\htdocs\yii-1\framework\web\actions\CInlineAction.php(49): ImportController->actionImport()
+#2 C:\xampp\htdocs\yii-1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): ImportController->runAction()
+#4 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): ImportController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): ImportController->run()
+#6 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=import/import
+in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (204)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
