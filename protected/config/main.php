@@ -8,6 +8,8 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Bolts Nuts Screws Online ',
+	'aliases' => array(
+    	'bootstrap' => 'ext.bootstrap',),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -17,6 +19,10 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.bootstrap.widgets.*',
+		'bootstrap.behaviors.*',
+	    'bootstrap.helpers.*',
+	    'bootstrap.widgets.*'
 	),
 
 	'modules'=>array(
@@ -26,12 +32,11 @@ return array(
 		// uncomment the following to enable the Gii tool		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'gii',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
-			 'generatorPaths'=>array(
-                'bootstrap.gii',
-            ),   
+			
+            'generatorPaths' => array('bootstrap.gii'),  
 		),
 		
 
@@ -40,7 +45,7 @@ return array(
 	// application components
 	'components'=>array(
 		 'bootstrap'=>array(
-        'class'=>'bootstrap.components.Bootstrap',),
+        'class' => 'bootstrap.components.BsApi'),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

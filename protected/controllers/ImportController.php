@@ -157,48 +157,7 @@ if($_FILES['csv']['error'] == 0){
 }
 }
 }
-public function actionImportCSV()
-{
-   $model=new UserImportForm;
-   if(isset($_POST['UserImportForm']))
-     {
-       $model->attributes=$_POST['UserImportForm'];
-       if($model->validate())
-         {
-          $csvFile=CUploadedFile::getInstance($model,'file');  
-          $tempLoc=$csvFile->getTempName();
 
-            $sql="LOAD DATA LOCAL INFILE '".$tempLoc."'
-				INTO TABLE `tbl_user`
-				FIELDS
-				    TERMINATED BY ','
-				    ENCLOSED BY '\"'
-				LINES
-				    TERMINATED BY '\n'
-				 IGNORE 1 LINES
-				(`name`, `age`, `location`)
-				";
-
-            $connection=Yii::app()->db;
-            $transaction=$connection->beginTransaction();
-                try
-                    {
-
-                        $connection->createCommand($sql)->execute();
-                        $transaction->commit();
-                    }
-                    catch(Exception $e) // an exception is raised if a query fails
-                     {
-                        print_r($e);
-                        exit;
-                        $transaction->rollBack();
-
-                     }
-              $this->redirect(array("user/index"));
-         }
-     } 
-   	$this->render("importcsv",array('model'=>$model));
-	}
 	public function actionImport(){
 	echo "here in import controller import function";
 		  $model = new Registration;
@@ -244,4 +203,118 @@ public function actionImportCSV()
     $this->render('import', array('model' => $model) );
 
 	}
+    public function actionPhpimport(){
+
+    if(isset($_POST["Import"]))
+    {
+        echo $filename=$_FILES["file"]["tmp_name"];
+        if($_FILES["file"]["size"] > 0)
+        {
+           $file = fopen($filename, "r");
+            $count = 0;                                     
+            while (($emapData = fgetcsv($file, 10000, ",")) !== FALSE)
+            {
+                $count++;                                      
+                if($count>1){                                
+                  $sql = "INSERT into prod_list_1(p_bench,p_name,p_price,p_reason) values ('$emapData[0]','$emapData[1]','$emapData[2]','$emapData[3]')";
+                  mysql_query($sql);
+                }                                              // add this line
+            }
+            fclose($file);
+            echo 'CSV File has been successfully Imported';
+        }
+        else
+            echo 'Invalid File:Please Upload CSV File';
+        }
+         $this->render('import');
+    }
+    public function actionImportCSV()
+    {
+       $model=new UserImportForm;
+
+       if(isset($_POST['UserImportForm']))
+         {
+
+           $model->attributes=$_POST['UserImportForm'];
+
+           if($model->validate())
+             {
+
+              $csvFile=CUploadedFile::getInstance($model,'file');  
+              $tempLoc=$csvFile->getTempName();
+
+                $sql="LOAD DATA LOCAL INFILE '".$tempLoc."'
+    INTO TABLE `tbl_user`
+    FIELDS
+        TERMINATED BY ','
+        ENCLOSED BY '\"'
+    LINES
+        TERMINATED BY '\n'
+     IGNORE 1 LINES
+    (`name`, `age`, `location`)
+    ";
+
+                $connection=Yii::app()->db;
+                $transaction=$connection->beginTransaction();
+                    try
+                        {
+
+                            $connection->createCommand($sql)->execute();
+                            $transaction->commit();
+                        }
+                        catch(Exception $e) // an exception is raised if a query fails
+                         {
+                            print_r($e);
+                            exit;
+                            $transaction->rollBack();
+
+                         }
+                  $this->redirect(array("user/index"));
+             }
+         }  
+
+       $this->render("importcsv",array('model'=>$model));
+    }
+    public function actionImportsubject(){
+        if(isset($_POST["Import"])){
+            if (!($_FILES["file"]["type"] == "text/csv"))
+            {
+                Yii::app()->session['error_file'] = "Not a csv file";
+                $this->render('import');
+            }
+            else
+            {           
+                echo $filename=$_FILES["file"]["tmp_name"];
+                if($_FILES["file"]["size"] > 0)
+                {
+                    $file = fopen($filename, "r");
+                    while (($emapData = fgetcsv($file, 10000, ",")) !== FALSE)
+                    {
+                        $attribute = array('SUBJ_CODE'=>$emapData[1], 'SUBJ_DESCRIPTION'=>$emapData[2], 'UNIT'=>$emapData[3], 'PRE_REQUISITE'=>$emapData[4], 'COURSE_ID'=>$emapData[5], 'AY'=>$emapData[6], 'SEMESTER'=>$emapData[7]);
+
+                        $command = Yii::app()->db->createCommand();                               
+                        if(! $command->insert('subject', $attribute))
+                        {
+                            echo "<script type=\"text/javascript\">
+                                    alert(\"Invalid File:Please Upload CSV File.\");
+                                    window.location = \"index.php\"
+                                </script>";
+                        
+                        }
+
+                    }
+                fclose($file);
+                 //throws a message if data successfully imported to mysql database from excel file
+                echo "<script type=\"text/javascript\">
+                            alert(\"CSV File has been successfully Imported.\");
+                            window.location = \"index.php\"
+                        </script>";
+
+            }
+        }
+        $this->render("import");
+    }
+
+        
+    }
 }

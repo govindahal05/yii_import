@@ -64,7 +64,6 @@ class DefaultController extends Controller {
 	$delimiter = ";";
 	$textDelimiter = '"';
 	//publish css and js
-echo "ok here";exit;
 	Yii::app()->clientScript->registerCssFile(
 		Yii::app()->assetManager->publish(
 			Yii::getPathOfAlias('application.modules.importcsv.assets') . '/styles.css'

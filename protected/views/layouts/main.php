@@ -14,16 +14,46 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css">
+
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-3.2.1"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
 
-<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-custom.css">
 
-<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 	<?php 
 	// echo Yii::app()->bootstrap->init();?>
+
+	<?php
+	/*$cs        = Yii::app()->clientScript;
+	$themePath = Yii::app()->theme->baseUrl;
+*/
+	/**
+	 * StyleSHeets
+	 */
+	/*$cs->registerCssFile($themePath . '/assets/css/bootstrap.css');
+	$cs->registerCssFile($themePath . '/assets/css/bootstrap-theme.css');
+*/
+	/**
+	 * JavaScripts
+	 */
+	/*$cs->registerCoreScript('jquery', CClientScript::POS_END);
+	$cs->registerCoreScript('jquery.ui', CClientScript::POS_END);
+	$cs->registerScriptFile($themePath . '/assets/js/bootstrap.min.js', CClientScript::POS_END);
+	$cs->registerScript('tooltip', "$('[data-toggle=\"tooltip\"]').tooltip();$('[data-toggle=\"popover\"]').tooltip()", CClientScript::POS_READY);*/
+	?>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	    <script src="<?php
+	//echo Yii::app()->theme->baseUrl . '/assets/js/html5shiv.js';
+	?>"></script>
+	    <script src="<?php
+	//echo Yii::app()->theme->baseUrl . '/assets/js/respond.min.js';
+	?>"></script>
+	<![endif]-->
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -66,6 +96,12 @@
 	</div><!-- footer -->
 
 </div><!-- page -->
+<script type='text/javascript'>
+    $(function(){
+    $("a[rel=tooltip]").tooltip();
+});
+</script>
+
 
 </body>
 </html>
