@@ -75,7 +75,7 @@ class Product extends CActiveRecord
 			'sku' => 'Sku',
 			'made_from_id' => 'Made From',
 			'prod_name' => 'Prod Name',
-'prod_type' => 'Product Type',
+			'prod_type' => 'Product Type',
 			'short_description' => 'Short Description',
 			'manufacturer' => 'Manufacturer',
 			'detail' => 'Detail',

@@ -244,15 +244,15 @@ if($_FILES['csv']['error'] == 0){
               $tempLoc=$csvFile->getTempName();
 
                 $sql="LOAD DATA LOCAL INFILE '".$tempLoc."'
-    INTO TABLE `tbl_user`
-    FIELDS
-        TERMINATED BY ','
-        ENCLOSED BY '\"'
-    LINES
-        TERMINATED BY '\n'
-     IGNORE 1 LINES
-    (`name`, `age`, `location`)
-    ";
+                    INTO TABLE `tbl_user`
+                    FIELDS
+                        TERMINATED BY ','
+                        ENCLOSED BY '\"'
+                    LINES
+                        TERMINATED BY '\n'
+                     IGNORE 1 LINES
+                    (`name`, `age`, `location`)
+                    ";
 
                 $connection=Yii::app()->db;
                 $transaction=$connection->beginTransaction();
@@ -276,45 +276,101 @@ if($_FILES['csv']['error'] == 0){
        $this->render("importcsv",array('model'=>$model));
     }
     public function actionImportsubject(){
-        if(isset($_POST["Import"])){
-            if (!($_FILES["file"]["type"] == "text/csv"))
-            {
-                Yii::app()->session['error_file'] = "Not a csv file";
+        if(!isset($_POST["Import"])){
+            $this->render('import');
+        }
+        else{
+            if (!($_FILES["file"]["type"] == "application/vnd.ms-excel")){
+                Yii::app()->user->setFlash('notcsv','Please! Import CSV file only');
                 $this->render('import');
             }
-            else
-            {           
-                echo $filename=$_FILES["file"]["tmp_name"];
-                if($_FILES["file"]["size"] > 0)
-                {
-                    $file = fopen($filename, "r");
+            else{
+
+                    /*echo "<pre>";
+                    print_r($labels);
+                    echo "</pre>"; */
+                    /*foreach($labels as $label){
+                        echo $i." ".$label."<br>";
+                        $i++;
+                    }*/
+                    
+                    /*echo "<pre>";
+                    print_r($emapData);
+                    echo "</pre>"; */
+                   /* echo $arraysAreEqual = ($labels == $emapData);
+                    echo $arraysAreEqual = ($labels === $emapData);
+                    exit;*/
+                    // var_dump($_FILES);exit;
+                $filename = $_FILES['file']['tmp_name'];
+                $model = new UserImportForm;
+                $labels= $model->attributeLabels();
+                /*echo "label";
+                var_dump($labels);echo "<br>";*/
+                echo $filename;
+                $file = fopen($filename, "r");
+                $emapData = fgetcsv($file, 10000, ",");
+                /*echo "imported data";
+                var_dump($emapData);
+                exit;   */
+
+                if($labels !== $emapData){
+                    Yii::app()->user->setFlash('notmachheading','Please! Import Valid CSV file with valid headings');
+                    $this->render('import');
+                }
+                else{   
                     while (($emapData = fgetcsv($file, 10000, ",")) !== FALSE)
                     {
-                        $attribute = array('SUBJ_CODE'=>$emapData[1], 'SUBJ_DESCRIPTION'=>$emapData[2], 'UNIT'=>$emapData[3], 'PRE_REQUISITE'=>$emapData[4], 'COURSE_ID'=>$emapData[5], 'AY'=>$emapData[6], 'SEMESTER'=>$emapData[7]);
-
-                        $command = Yii::app()->db->createCommand();                               
-                        if(! $command->insert('subject', $attribute))
+                        $attribute = array(
+                        $labels[0]=>$emapData[0], 
+                        $labels[1]=>$emapData[1], 
+                        $labels[2]=>$emapData[2], 
+                        $labels[3]=>$emapData[3], 
+                        $labels[4]=>$emapData[4], 
+                        $labels[5]=>$emapData[5], 
+                        $labels[6]=>$emapData[6],
+                        $labels[7]=>$emapData[7],
+                        $labels[8]=>$emapData[8],
+                        $labels[9]=>$emapData[9],
+                        $labels[10]=>$emapData[10],
+                        $labels[11]=>$emapData[11],
+                        $labels[12]=>$emapData[12],
+                        $labels[13]=>$emapData[13],
+                        $labels[14]=>$emapData[14],
+                        $labels[15]=>$emapData[15],
+                        $labels[16]=>$emapData[16],
+                        $labels[17]=>$emapData[17],
+                        $labels[18]=>$emapData[18],
+                        $labels[19]=>$emapData[19],
+                        $labels[20]=>$emapData[20],
+                        $labels[21]=>$emapData[21],
+                        $labels[22]=>$emapData[22],
+                        $labels[23]=>$emapData[23]
+                    );
+                   /* $model = new Product;
+                    $model->attributes=$attribute;
+                    echo 'validae '.$model->validate($attribute);exit;*/
+                        /*echo "<PRE>";
+                        print_r($attribute);
+                        echo "</PRE>";
+*/
+                      $command = Yii::app()->db->createCommand();
+                        if(! $command->insert('tbl_product', $attribute))
                         {
                             echo "<script type=\"text/javascript\">
                                     alert(\"Invalid File:Please Upload CSV File.\");
                                     window.location = \"index.php\"
                                 </script>";
-                        
                         }
-
                     }
-                fclose($file);
-                 //throws a message if data successfully imported to mysql database from excel file
-                echo "<script type=\"text/javascript\">
+                    fclose($file);
+                    echo "<script type=\"text/javascript\">
                             alert(\"CSV File has been successfully Imported.\");
                             window.location = \"index.php\"
                         </script>";
-
+                    $this->render('import');
+                    }
+                }      
             }
         }
-        $this->render("import");
     }
 
-        
-    }
-}

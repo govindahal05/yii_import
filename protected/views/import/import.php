@@ -24,14 +24,22 @@ $this->breadcrumbs=array('Import',);
                 <form class="form-horizontal well" action="http://localhost/notsboltsscrews/index.php?r=import/importsubject" method="post" name="upload_excel" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Import CSV/Excel file</legend>
-                        <div style="text-align: center;font-size: 25px;">
-                            <?php 
-                                if( Yii::app()->session['error_file']){ 
-                                echo  "<label>".Yii::app()->session['error_file']."</label>";
-                                unset(Yii::app()->session['error_file']);
-                                }else{
-                                    echo "";
-                                } ?>
+                        <div>
+                            <?php if(Yii::app()->user->hasFlash('notcsv')): ?>
+                            <div class="flash-success">
+                                <?php echo Yii::app()->user->getFlash('notcsv'); ?>
+                            </div>
+                            <?php endif; ?>
+                            <?php if(Yii::app()->user->hasFlash('notvalid')): ?>
+                            <div class="flash-success">
+                                <?php echo Yii::app()->user->getFlash('notvalid'); ?>
+                            </div>
+                            <?php endif; ?>
+                            <?php if(Yii::app()->user->hasFlash('notmachheading')): ?>
+                            <div class="flash-success">
+                                <?php echo Yii::app()->user->getFlash('notmachheading'); ?>
+                            </div>
+                            <?php endif; ?>
                         </div>
                         <div class="control-group">
                             <div class="control-label">
