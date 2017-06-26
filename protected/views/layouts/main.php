@@ -17,7 +17,11 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-3.2.1"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-migrate-git.min.js"></script>
 
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css">
@@ -59,7 +63,6 @@
 </head>
 
 <body>
-
 <div class="container" id="page">
 
 	<div id="header">
@@ -97,10 +100,12 @@
 
 </div><!-- page -->
 <script type='text/javascript'>
-    $(function(){
+   /* $(function(){
     $("a[rel=tooltip]").tooltip();
-});
+});*/
 </script>
+
+
 
 
 </body>

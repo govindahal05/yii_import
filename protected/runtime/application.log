@@ -2079,3 +2079,29 @@ in C:\xampp\htdocs\notsboltsscrews\index.php (13)
 2017/06/25 14:05:21 [warning] [application] Failed to set unsafe attribute "has_box" of "Product".
 in C:\xampp\htdocs\notsboltsscrews\protected\controllers\ImportController.php (350)
 in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/26 08:30:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO contacts(contact_id, contact_first, contact_last, contact_email) VALUES ('1', 'contact_first 1', 'contact_last 1', 'contact_email 1'), ('2', 'contact_first 2', 'contact_last 2', 'contact_email 2'), ('3', 'contact_first 3', 'contact_last 3', 'contact_email 3').
+in C:\xampp\htdocs\notsboltsscrews\protected\modules\importcsv\models\ImportCsv.php (111)
+in C:\xampp\htdocs\notsboltsscrews\protected\modules\importcsv\controllers\DefaultController.php (200)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/26 08:34:22 [error] [php] Undefined index: table (C:\xampp\htdocs\notsboltsscrews\protected\modules\importcsv\controllers\DefaultController.php:104)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=importcsv
+in C:\xampp\htdocs\notsboltsscrews\protected\modules\importcsv\controllers\DefaultController.php (104)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)
+2017/06/26 08:34:28 [error] [php] Undefined index: table (C:\xampp\htdocs\notsboltsscrews\protected\modules\importcsv\controllers\DefaultController.php:104)
+Stack trace:
+#0 C:\xampp\htdocs\yii-1\framework\web\CController.php(286): DefaultController->runAction()
+#1 C:\xampp\htdocs\yii-1\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(282): DefaultController->run()
+#3 C:\xampp\htdocs\yii-1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\notsboltsscrews\index.php(13): CWebApplication->run()
+REQUEST_URI=/notsboltsscrews/index.php?r=importcsv
+in C:\xampp\htdocs\notsboltsscrews\protected\modules\importcsv\controllers\DefaultController.php (104)
+in C:\xampp\htdocs\notsboltsscrews\index.php (13)

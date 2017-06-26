@@ -74,7 +74,7 @@ Version 0.6 - Fixed bugs:
 		this.create_wrapper();
 		this.create_input();
 
-		if (navigator.userAgent.toUpperCase().indexOf('MSIE')){
+		if (jQuery.browser.msie){
 			// fix ie transparent background bug
 			this.make_parent_opaque();
 		}

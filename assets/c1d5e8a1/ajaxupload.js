@@ -73,7 +73,7 @@ Version 0.6 - Fixed bugs:
 
 		this.create_wrapper();
 		this.create_input();
-
+		var isIE = navigator.userAgent.toUpperCase().indexOf('MSIE') >=0 ? 'click' : 'change' ;
 		if (navigator.userAgent.toUpperCase().indexOf('MSIE')){
 			// fix ie transparent background bug
 			this.make_parent_opaque();

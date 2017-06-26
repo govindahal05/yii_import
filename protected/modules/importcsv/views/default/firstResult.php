@@ -27,7 +27,7 @@ elseif ($error==2) {
     echo("<span class='importCsvError'>".Yii::t('importcsvModule.importcsv', 'Error').": ".Yii::t('importcsvModule.importcsv', 'Download file is not a .csv')."</span>");
 }
 elseif ($error==0) {
-    echo "hello error 0";exit;
+    echo "hello error 0";
 
 
     // No errors. Going to second step

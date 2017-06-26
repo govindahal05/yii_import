@@ -75,6 +75,7 @@ Version 0.6 - Fixed bugs:
 		this.create_input();
 
 		if (navigator.userAgent.toUpperCase().indexOf('MSIE')){
+			console.log('hello hello');
 			// fix ie transparent background bug
 			this.make_parent_opaque();
 		}
